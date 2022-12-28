@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box 0;
+
+}
+html{
+    max-height: 100%;
+}
+.row,container,container-fluid{
+    margin: 0;
+    padding: 0;
+}
+.cabecera{
+    font-style: italic;
+    background-color: rgb(153, 228, 203);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+}
+.buscador{
+    margin: 0%;
+    padding: 2%;
+    background-color: rgb(177, 235, 235);
+    text-align: center;
+    display: block;
+    font-size: 30px;
+}
+.body{
+    background-color: #212529;
+}
+body { 
+    max-height: 100%;
+    max-width: 100%;
+    display: grid; 
+    grid-template-areas:  
+        "header header header"  
+        "main main main"
+        "aside aside aside"  
+        "footer footer footer";
+        grid-template-columns:1fr auto;
+        grid-template-rows: 200px 300px 100px;
+ }
+ .header{
+    grid-area: header;
+ }
+ .main{
+    grid-area: main;
+ }
+.footer{
+grid-area: footer;
+}
+.main{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    row-gap: 10px;
+    margin-top: 50px;
+    column-gap: 20px;
+}
+@media (min-width:800px) {
+    .main{
+        margin: 0%;
+        box-sizing: content-box;
+        align-items: center;
+    }
+}
+@media (min-width:1300px) {
+    .main{
+        margin: 10px;
+        box-sizing: content-box;
+        padding: 20px;
+        align-items: flex-start;
+    }
+}
+.body2{
+    background-color: azure;
+}
+@media (min-width:1300px){
+    .aside{
+        margin: 30px;
+        padding: 50px;
+    }
+}
+.body3 { 
+    max-height: auto;
+    max-width: 100%;
+    display: grid; 
+    grid-template-areas:  
+        "header header header header "  
+        "main main main main" 
+        "aside aside aside aside"
+        "footer footer footer footer";
+        grid-template-columns:4rem auto 200px 200px;
+        grid-template-rows: auto 100vh auto;
+ }
+ .header2{
+    grid-area: header;
+ }
+ .main2{
+    grid-area: main;
+ }
+ .aside2{
+    grid-area: aside;
+ }
+ .pie2{
+    grid-area: footer;
+ }
+.tarjet1{
+    box-sizing: border-box;
+    display: inline-block;
+    border-color: #212529;
+    border-style: double;
+    margin: 20px;
+
+
+}
+.btncompra{
+    border-color: #212529;
+    border-style: groove;
+    margin: 5px;
+    padding: 2px;
+    background-color: rgb(97, 148, 97);
+}
+.fotos{
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.carousel-inner{
+    max-width: 100%;
+}
+
+.barra{
+    margin: 0%;
+    background-color: aquamarine;
+    padding: 10px;
+}
+.link{
+    margin: 0;
+    padding: 5px;
+    color: black;
+    font-size: 40px;
+
+}
+.producto {
+    margin: 0%;
+    padding: 0%;
+    image-resolution: 2%;
+   background: fixed;
+   display: inline-block;
+   overflow: hidden;
+
+
+}
+.oferta{
+    margin-top: 50px;
+    background-color: white;
+    color: rgb(43, 55, 226);
+    font-size: 200%;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;    
+}
+
+.dragon{
+    margin: 0;
+    padding: 10px;
+    box-sizing: content-box;
+    background-color: blueviolet;
+    border-radius: 10px;
+    display: flex;
+    row-gap: 10px;
+    border-color: black;
+    border-style: dashed;
+    height: 20%;
+}
+.playa{
+    margin: 0;
+    padding: 10px;
+    box-sizing: content-box;
+    background-color: blueviolet;
+    border-radius: 10px;
+    display: flex;
+    row-gap: 10px;
+    border-color: black;
+    border-style: dashed;
+    height: 20%;
+     }
+.uni{
+    margin: 0;
+    padding: 10px;
+    box-sizing: content-box;
+    background-color: blueviolet;
+    border-radius: 10px;
+    display: flex;
+    row-gap: 10px;
+    border-color: black;
+    border-style: dashed;
+    height: 20%;    
+}
+.lego{
+    margin: 0;
+    padding: 10px;
+    box-sizing: content-box;
+    background-color: blueviolet;
+    border-radius: 10px;
+    display: flex;
+    row-gap: 10px;
+    border-color: black;
+    border-style: dashed;
+    height: 20%;    
+    }
+.barbie{
+    margin: 0;
+    padding: 10px;
+    box-sizing: content-box;
+    background-color: blueviolet;
+    border-radius: 10px;
+    display: flex;
+    row-gap: 10px;
+    border-color: black;
+    border-style: dashed;
+    height: 20%;    
+
+}    
+.descrip{
+    margin: 0%;
+    color: black;
+    font-weight: 50px;
+    font-size: 30px;
+    padding: 1px 2px 5px 32px;
+    }
+.prod{
+    margin-top: 50px;
+    background-color: white;
+    color: rgb(43, 55, 226);
+    font-size: 200%;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;   
+}
+.inf{
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+}
+.pie3{
+    display: flex;
+    row-gap: 20px;
+    flex-wrap: wrap;
+
+}
+.gracias{
+    color: blue;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    font-size: 30px;
+
+}
+.piepag{
+    margin: 20px;
+    background-color:rgba(153, 228, 203);
+    font-size: 30px;
+    color: white;
+    
+}
+.form{
+    margin: 2%;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    background-color: aqua;
+    overflow: hidden;
+    border-color: black;
+    border-style: double;
+    width: 50%;
+    }
+.info{
+    background-color: white;
+    color: rgb(43, 55, 226);
+    font-size: 200%;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;    
+}
+.info1{
+    margin: 20px;color: rgb(7, 7, 161);
+    font-weight: 20px;
+    font-size: 20px;
+}
+.mapa{
+    margin: 20px;
+    padding: 5%;
+    max-width: 30%;
+}
+.pie2{
+    background-color: green;
+    display: flex;
+    align-items: flex-end;
+}    
+.formulario{
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+.fotos1{
+    max-width: 30%;
+}
+.bola {
+    margin-top: 50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(50, 97, 87);
+    border: 2px solid #999;
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+  }
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
